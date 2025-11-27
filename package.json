@@ -1,0 +1,29 @@
+{
+  "name": "claudissimo-pizza",
+  "version": "1.0.0",
+  "description": "Claudissimo Pizza - application React",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,html}\"",
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickbrouhard/claudissimo-pizza.git"
+  },
+  "keywords": [],
+  "author": "Patrick Brouhard",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/patrickbrouhard/claudissimo-pizza/issues"
+  },
+  "homepage": "https://github.com/patrickbrouhard/claudissimo-pizza#readme",
+  "devDependencies": {
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.9.0",
+    "prettier": "^3.7.1"
+  }
+}
