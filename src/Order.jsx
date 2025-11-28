@@ -95,6 +95,7 @@ export default function Order() {
             </div>
             <button type="submit">Add to Cart</button>
         </div>
+        </form>
             {loading 
             ? (<h1>loading pizza :o</h1>)
             : (
@@ -107,7 +108,6 @@ export default function Order() {
                     <p>{price}</p>
                 </div>
             )}
-        </form>
     </div>
     );
 }
