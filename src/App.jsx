@@ -5,7 +5,7 @@ import Order from "./Order";
 const App = () => {
   return (
     <div>
-      <h1>Bienvenue chez Claudissimo Pizza!</h1>
+      <h1 className="logo">Bienvenue chez Claudissimo Pizza!</h1>
       <Order />
       <PizzaOfTheDay />
     </div>
