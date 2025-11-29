@@ -3,8 +3,7 @@ import globals from "globals";
 import prettier from "eslint-config-prettier";
 import reactPlugin from "eslint-plugin-react";
 
-//** @type {import('eslint').Linter.Config[]} */
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   js.configs.recommended,
   {
@@ -19,20 +18,28 @@ export default [
   {
     files: ["**/*.js", "**/*.jsx"],
     languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
+      globals: { ...globals.browser, ...globals.node },
       parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
-        ecmaFeatures: {
-          jsx: true,
-        },
+        ecmaFeatures: { jsx: true },
       },
     },
     rules: {
-      "react/no-unescaped-entities": "off",
+      semi: ["error", "always"],
+      quotes: ["error", "single"],
+      eqeqeq: ["error", "always"],
+      "no-var": "error",
+      "prefer-const": "error",
+      "no-unused-vars": "error",
+      "object-curly-spacing": ["error", "always"],
+      "arrow-spacing": ["error", { before: true, after: true }],
+
+      "no-empty": "error",
+      "no-dupe-keys": "error",
+      "no-duplicate-case": "error",
+      "no-obj-calls": "error",
+
+      // règles React supplémentaires
+      "react/no-unescaped-entities": "warn",
       "react/prop-types": "off",
     },
   },
