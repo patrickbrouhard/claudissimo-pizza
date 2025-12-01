@@ -1,5 +1,4 @@
-import { usePizzaOfTheDay } from './usePizzaOfTheDay';
-
+import { usePizzaOfTheDay } from "./usePizzaOfTheDay";
 
 const intl = new Intl.NumberFormat("fr-FR", {
   style: "currency",
@@ -15,7 +14,7 @@ const PizzaOfTheDay = () => {
 
   return (
     <div className="pizza-of-the-day">
-      <h2>Pizza of the Day</h2>
+      <h2>Pizza du jour</h2>
       <div>
         <div className="pizza-of-the-day-info">
           <h3>{pizzaOfTheDay.name}</h3>

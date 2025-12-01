@@ -8,15 +8,18 @@ function Index() {
   return (
     <div className="index">
       <div className="index-brand">
-        <h1>Padre Gino's</h1>
-        <p>Pizza & Art at a location near you</p>
+        <p>Pizzas savoyardes et savoureuses</p>
+        <h1>Chez Padre Gino</h1>
       </div>
       <ul>
         <li>
-          <Link to="/order">Order</Link>
+          <Link to="/order">Commander</Link>
         </li>
         <li>
-          <Link to="/past">Past Orders</Link>
+          <Link to="/past">Commandes précédentes</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
     </div>

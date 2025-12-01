@@ -14,7 +14,7 @@ export default function Cart({ cart, checkout }) {
 
   return (
     <div className="cart">
-      <h2>Cart</h2>
+      <h2>Panier</h2>
       <ul>
         {cart.map((item, index) => (
           <li key={index}>
@@ -27,7 +27,7 @@ export default function Cart({ cart, checkout }) {
         ))}
       </ul>
       <p>Total: {intl.format(total)}</p>
-      <button onClick={checkout}>Checkout</button>
+      <button onClick={checkout}>Valider la commande</button>
     </div>
   );
 }

@@ -63,7 +63,7 @@ function Order() {
   return (
     <div className="order-page">
       <div className="order">
-        <h2>Create Order</h2>
+        <h2>Commander</h2>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -75,7 +75,7 @@ function Order() {
         >
           <div>
             <div>
-              <label htmlFor="pizza-type">Pizza Type</label>
+              <label htmlFor="pizza-type">Type</label>
               <select
                 onChange={(e) => setPizzaType(e.target.value)}
                 name="pizza-type"
@@ -89,7 +89,7 @@ function Order() {
               </select>
             </div>
             <div>
-              <label htmlFor="pizza-size">Pizza Size</label>s
+              <label htmlFor="pizza-size">Taille</label>s
               <div>
                 <span>
                   <input
@@ -126,7 +126,7 @@ function Order() {
                 </span>
               </div>
             </div>
-            <button type="submit">Add to Cart</button>
+            <button type="submit">Ajouter au panier</button>
           </div>
           {loading ? (
             <h1>loading pizza :o</h1>
